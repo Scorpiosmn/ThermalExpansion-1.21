@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "thermal:machine_frame"
+    },
+    "I": {
+      "tag": "c:gears/constantan"
+    },
+    "P": {
+      "item": "thermal:rf_coil"
+    },
+    "X": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "Y": {
+      "tag": "c:ingots/bronze"
+    }
+  },
+  "pattern": [
+    " X ",
+    "YCY",
+    "IPI"
+  ],
+  "result": {
+    "item": "thermal:machine_press"
+  }
+}

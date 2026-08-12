@@ -1,0 +1,47 @@
+modLoader = "javafml"
+loaderVersion = "[${lang_version},)"
+issueTrackerURL = "https://github.com/cofh/feedback"
+license = "CoFH - Don't Be A Jerk (Learn, Don't Steal)"
+
+[[mods]]
+modId = "thermal_expansion"
+version = "${file.jarVersion}"
+displayName = "Thermal Expansion"
+updateJSONURL = "https://raw.github.com/cofh/version/main/thermal/update_expansion.json"
+displayURL = "https://teamcofh.com/"
+logoFile = "thermal_expansion.png"
+itemIcon = "thermal:machine_furnace"
+credits = "Team CoFH"
+authors = "King Lemming"
+description = '''
+Expanding Minecraft Thermally! A server-friendly and content-rich blend of magic and technology!
+
+Contains the "factory" of the Thermal Series - Dynamos and Machines to both produce and process.
+'''
+[[dependencies.thermal_expansion]]
+modId = "minecraft"
+type = "required"
+versionRange = "1.20.4"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_expansion]]
+modId = "neoforge"
+type = "required"
+versionRange = "[${neo_version},)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_expansion]]
+modId = "cofh_core"
+required = true
+versionRange = "${cofh_core_version_range}"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.thermal_expansion]]
+modId = "thermal"
+required = true
+versionRange = "${thermal_core_version_range}"
+ordering = "AFTER"
+side = "BOTH"

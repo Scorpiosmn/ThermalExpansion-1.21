@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "description": {
+      "translate": "pack.thermal_expansion.description"
+    },
+    "pack_format": 15
+  }
+}

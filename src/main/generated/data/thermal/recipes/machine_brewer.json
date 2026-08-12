@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "thermal:machine_frame"
+    },
+    "I": {
+      "tag": "c:gears/constantan"
+    },
+    "P": {
+      "item": "thermal:rf_coil"
+    },
+    "X": {
+      "item": "minecraft:brewing_stand"
+    },
+    "Y": {
+      "tag": "forge:glass"
+    }
+  },
+  "pattern": [
+    " X ",
+    "YCY",
+    "IPI"
+  ],
+  "result": {
+    "item": "thermal:machine_brewer"
+  }
+}

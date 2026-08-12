@@ -1,0 +1,19 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "minecraft:stone_bricks"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 500
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:mossy_stone_bricks"
+    }
+  ],
+  "energy": 2000,
+  "experience": 0.1
+}

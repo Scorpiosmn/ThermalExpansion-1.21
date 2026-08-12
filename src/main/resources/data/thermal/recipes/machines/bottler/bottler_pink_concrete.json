@@ -1,0 +1,18 @@
+{
+  "type": "thermal:bottler",
+  "ingredients": [
+    {
+      "item": "minecraft:pink_concrete_powder"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:pink_concrete"
+    }
+  ],
+  "experience": 0.1
+}
