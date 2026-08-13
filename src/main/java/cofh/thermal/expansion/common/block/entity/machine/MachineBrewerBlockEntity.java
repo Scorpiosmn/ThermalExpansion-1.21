@@ -67,7 +67,7 @@ public class MachineBrewerBlockEntity extends MachineBlockEntity {
             return false;
         }
         FluidStack prevFluid = renderFluid;
-        renderFluid = new FluidStack(curRecipe.getOutputFluids(this).get(0), BUCKET_VOLUME);
+        renderFluid = curRecipe.getOutputFluids(this).get(0).copyWithAmount(BUCKET_VOLUME);
         return !FluidHelper.fluidsEqual(renderFluid, prevFluid);
     }
 

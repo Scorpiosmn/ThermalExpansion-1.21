@@ -21,7 +21,7 @@ public class TExpSounds {
 
     public static Supplier<SoundEvent> registerSound(String soundID) {
 
-        return SOUND_EVENTS.register(soundID, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(ID_THERMAL, soundID)));
+        return SOUND_EVENTS.register(soundID, () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(ID_THERMAL, soundID)));
     }
 
     // region IDs

@@ -13,7 +13,7 @@ import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 public class MachinePulverizerScreen extends MachineScreen<MachinePulverizerMenu> {
 
     public static final String TEX_PATH = ID_THERMAL + ":textures/gui/container/pulverizer.png";
-    public static final ResourceLocation TEXTURE = new ResourceLocation(TEX_PATH);
+    public static final ResourceLocation TEXTURE = ResourceLocation.parse(TEX_PATH);
 
     public MachinePulverizerScreen(MachinePulverizerMenu container, Inventory inv, Component titleIn) {
 

@@ -71,7 +71,7 @@ public class DynamoCompressionBlockEntity extends DynamoBlockEntity {
     protected boolean cacheRenderFluid() {
 
         FluidStack prevFluid = renderFluid;
-        renderFluid = new FluidStack(fuelTank.getFluidStack(), BUCKET_VOLUME);
+        renderFluid = fuelTank.getFluidStack().copyWithAmount(BUCKET_VOLUME);
         return !FluidHelper.fluidsEqual(renderFluid, prevFluid);
     }
     // endregion

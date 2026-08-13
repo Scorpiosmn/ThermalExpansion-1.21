@@ -4,13 +4,13 @@ import cofh.thermal.expansion.init.data.providers.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import static cofh.lib.util.constants.ModIds.ID_THERMAL_EXPANSION;
 
-@Mod.EventBusSubscriber (bus = Mod.EventBusSubscriber.Bus.MOD, modid = ID_THERMAL_EXPANSION)
+@EventBusSubscriber (bus = EventBusSubscriber.Bus.MOD, modid = ID_THERMAL_EXPANSION)
 public class TExpDataGen {
 
     @SubscribeEvent
@@ -24,8 +24,8 @@ public class TExpDataGen {
         gen.addProvider(event.includeServer(), blockTags);
         gen.addProvider(event.includeServer(), new TExpTagsProvider.Item(output, event.getLookupProvider(), blockTags.contentsGetter(), exFileHelper));
 
-        gen.addProvider(event.includeServer(), new TExpLootTableProvider(output));
-        gen.addProvider(event.includeServer(), new TExpRecipeProvider(output));
+        gen.addProvider(event.includeServer(), new TExpLootTableProvider(output, event.getLookupProvider()));
+        gen.addProvider(event.includeServer(), new TExpRecipeProvider(output, event.getLookupProvider()));
 
         gen.addProvider(event.includeClient(), new TExpBlockStateProvider(output, exFileHelper));
         gen.addProvider(event.includeClient(), new TExpItemModelProvider(output, exFileHelper));

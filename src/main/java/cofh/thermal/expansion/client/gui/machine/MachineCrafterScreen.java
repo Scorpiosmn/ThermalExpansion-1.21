@@ -17,7 +17,7 @@ import static cofh.lib.util.helpers.SoundHelper.playClickSound;
 public class MachineCrafterScreen extends MachineScreen<MachineCrafterMenu> {
 
     public static final String TEX_PATH = ID_THERMAL + ":textures/gui/container/crafter.png";
-    public static final ResourceLocation TEXTURE = new ResourceLocation(TEX_PATH);
+    public static final ResourceLocation TEXTURE = ResourceLocation.parse(TEX_PATH);
 
     public static final String TEX_ACCEPT = ID_COFH_CORE + ":textures/gui/elements/button_accept.png";
 

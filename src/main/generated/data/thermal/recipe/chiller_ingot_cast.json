@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "tag": "c:plates/bronze"
+    },
+    "X": {
+      "item": "minecraft:nether_brick"
+    }
+  },
+  "pattern": [
+    " P ",
+    "PXP",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "thermal:chiller_ingot_cast"
+  }
+}

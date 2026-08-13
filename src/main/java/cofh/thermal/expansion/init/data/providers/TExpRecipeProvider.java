@@ -3,6 +3,7 @@ package cofh.thermal.expansion.init.data.providers;
 import cofh.lib.init.data.RecipeProviderCoFH;
 import cofh.lib.init.tags.ItemTagsCoFH;
 import cofh.thermal.lib.util.references.ThermalTags;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
@@ -18,11 +19,13 @@ import static cofh.thermal.lib.util.ThermalIDs.*;
 import static net.minecraft.data.recipes.RecipeCategory.BUILDING_BLOCKS;
 import static net.minecraft.data.recipes.RecipeCategory.MISC;
 
+import java.util.concurrent.CompletableFuture;
+
 public class TExpRecipeProvider extends RecipeProviderCoFH {
 
-    public TExpRecipeProvider(PackOutput output) {
+    public TExpRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
 
-        super(output, ID_THERMAL);
+        super(output, registries, ID_THERMAL);
     }
 
     @Override
@@ -58,7 +61,7 @@ public class TExpRecipeProvider extends RecipeProviderCoFH {
                 .define('I', ItemTagsCoFH.GEARS_COPPER)
                 .define('P', rfCoil)
                 .define('X', reg.get("saw_blade"))
-                .define('Y', Tags.Items.STONE)
+                .define('Y', Tags.Items.STONES)
                 .pattern(" X ")
                 .pattern("YCY")
                 .pattern("IPI")
@@ -82,7 +85,7 @@ public class TExpRecipeProvider extends RecipeProviderCoFH {
                 .define('I', ItemTagsCoFH.GEARS_INVAR)
                 .define('P', rfCoil)
                 .define('X', Blocks.BLAST_FURNACE)
-                .define('Y', Tags.Items.SAND)
+                .define('Y', Tags.Items.SANDS)
                 .pattern(" X ")
                 .pattern("YCY")
                 .pattern("IPI")
@@ -94,7 +97,7 @@ public class TExpRecipeProvider extends RecipeProviderCoFH {
                 .define('I', ItemTagsCoFH.GEARS_LUMIUM)
                 .define('P', rfCoil)
                 .define('X', Blocks.DIRT)
-                .define('Y', Tags.Items.GLASS)
+                .define('Y', Tags.Items.GLASS_BLOCKS)
                 .pattern(" X ")
                 .pattern("YCY")
                 .pattern("IPI")
@@ -129,7 +132,7 @@ public class TExpRecipeProvider extends RecipeProviderCoFH {
                 .define('C', machineFrame)
                 .define('I', ItemTagsCoFH.GEARS_INVAR)
                 .define('P', rfCoil)
-                .define('X', Tags.Items.GLASS)
+                .define('X', Tags.Items.GLASS_BLOCKS)
                 .define('Y', Blocks.NETHER_BRICKS)
                 .pattern(" X ")
                 .pattern("YCY")
@@ -141,7 +144,7 @@ public class TExpRecipeProvider extends RecipeProviderCoFH {
                 .define('C', machineFrame)
                 .define('I', ItemTagsCoFH.GEARS_INVAR)
                 .define('P', rfCoil)
-                .define('X', Tags.Items.GLASS)
+                .define('X', Tags.Items.GLASS_BLOCKS)
                 .define('Y', Blocks.PACKED_ICE)
                 .pattern(" X ")
                 .pattern("YCY")
@@ -153,7 +156,7 @@ public class TExpRecipeProvider extends RecipeProviderCoFH {
                 .define('C', machineFrame)
                 .define('I', ItemTagsCoFH.GEARS_INVAR)
                 .define('P', rfCoil)
-                .define('X', Tags.Items.GLASS)
+                .define('X', Tags.Items.GLASS_BLOCKS)
                 .define('Y', Tags.Items.INGOTS_COPPER)
                 .pattern(" X ")
                 .pattern("YCY")
@@ -178,7 +181,7 @@ public class TExpRecipeProvider extends RecipeProviderCoFH {
                 .define('I', ItemTagsCoFH.GEARS_CONSTANTAN)
                 .define('P', rfCoil)
                 .define('X', Blocks.BREWING_STAND)
-                .define('Y', Tags.Items.GLASS)
+                .define('Y', Tags.Items.GLASS_BLOCKS)
                 .pattern(" X ")
                 .pattern("YCY")
                 .pattern("IPI")
@@ -190,7 +193,7 @@ public class TExpRecipeProvider extends RecipeProviderCoFH {
                 .define('I', ItemTagsCoFH.GEARS_COPPER)
                 .define('P', rfCoil)
                 .define('X', Items.BUCKET)
-                .define('Y', Tags.Items.GLASS)
+                .define('Y', Tags.Items.GLASS_BLOCKS)
                 .pattern(" X ")
                 .pattern("YCY")
                 .pattern("IPI")
@@ -233,7 +236,7 @@ public class TExpRecipeProvider extends RecipeProviderCoFH {
                 .define('I', Tags.Items.INGOTS_IRON)
                 .define('G', ItemTagsCoFH.GEARS_IRON)
                 .define('X', Tags.Items.DUSTS_REDSTONE)
-                .define('Y', Tags.Items.STONE)
+                .define('Y', Tags.Items.STONES)
                 .pattern(" C ")
                 .pattern("IGI")
                 .pattern("YXY")

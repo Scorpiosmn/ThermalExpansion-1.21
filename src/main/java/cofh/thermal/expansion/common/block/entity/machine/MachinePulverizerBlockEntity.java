@@ -80,9 +80,7 @@ public class MachinePulverizerBlockEntity extends MachineBlockEntity {
         int decrement = itemInputCounts.size() > 1 ? itemInputCounts.get(1) : 0;
         if (decrement > 0) {
             if (catalystSlot.getItemStack().isDamageableItem()) {
-                if (catalystSlot.getItemStack().hurt(decrement, MathHelper.RANDOM, null)) {
-                    catalystSlot.modify(-1);
-                }
+                catalystSlot.getItemStack().hurtAndBreak(decrement, (net.minecraft.server.level.ServerLevel) level, null, item -> { });
             } else {
                 catalystSlot.modify(-decrement);
             }

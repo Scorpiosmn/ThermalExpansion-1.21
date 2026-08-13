@@ -13,7 +13,7 @@ import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 public class MachineFurnaceScreen extends MachineScreen<MachineFurnaceMenu> {
 
     public static final String TEX_PATH = ID_THERMAL + ":textures/gui/container/furnace.png";
-    public static final ResourceLocation TEXTURE = new ResourceLocation(TEX_PATH);
+    public static final ResourceLocation TEXTURE = ResourceLocation.parse(TEX_PATH);
 
     public MachineFurnaceScreen(MachineFurnaceMenu container, Inventory inv, Component titleIn) {
 

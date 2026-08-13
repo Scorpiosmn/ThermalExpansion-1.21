@@ -100,10 +100,10 @@ public class MachineCrafterBlockEntity extends MachineBlockEntity {
             craftMatrix.setItem(i, inventory.get(SLOT_CRAFTING_START + i));
         }
         RecipeHolder<CraftingRecipe> craftRecipe;
-        Optional<RecipeHolder<CraftingRecipe>> possibleRecipe = level.getRecipeManager().getRecipeFor(RecipeType.CRAFTING, craftMatrix, level);
+        Optional<RecipeHolder<CraftingRecipe>> possibleRecipe = level.getRecipeManager().getRecipeFor(RecipeType.CRAFTING, craftMatrix.asCraftInput(), level);
         if (possibleRecipe.isPresent()) {
             craftRecipe = possibleRecipe.get();
-            craftResult.setItem(0, craftRecipe.value().assemble(craftMatrix, level.registryAccess()));
+            craftResult.setItem(0, craftRecipe.value().assemble(craftMatrix.asCraftInput(), level.registryAccess()));
         } else {
             craftRecipe = null;
             craftResult.setItem(0, ItemStack.EMPTY);
@@ -179,7 +179,7 @@ public class MachineCrafterBlockEntity extends MachineBlockEntity {
         }
         FluidStack prevFluid = renderFluid;
         if (!fluidInputCounts.isEmpty() && fluidInputCounts.get(0) > 0) {
-            renderFluid = new FluidStack(inputTank.getFluidStack(), BUCKET_VOLUME);
+            renderFluid = inputTank.getFluidStack().copyWithAmount(BUCKET_VOLUME);
         } else {
             renderFluid = FluidStack.EMPTY;
         }
@@ -242,7 +242,7 @@ public class MachineCrafterBlockEntity extends MachineBlockEntity {
         super.getConfigPacket(buffer);
 
         for (int i = SLOT_CRAFTING_START; i < SLOT_CRAFTING_START + 9; ++i) {
-            buffer.writeItem(inventory.getStackInSlot(i));
+            ItemStack.OPTIONAL_STREAM_CODEC.encode((net.minecraft.network.RegistryFriendlyByteBuf) buffer, inventory.getStackInSlot(i));
         }
         return buffer;
     }
@@ -253,7 +253,7 @@ public class MachineCrafterBlockEntity extends MachineBlockEntity {
         super.handleConfigPacket(buffer);
 
         for (int i = SLOT_CRAFTING_START; i < SLOT_CRAFTING_START + 9; ++i) {
-            inventory.set(i, buffer.readItem());
+            inventory.set(i, ItemStack.OPTIONAL_STREAM_CODEC.decode((net.minecraft.network.RegistryFriendlyByteBuf) buffer));
         }
         setRecipe();
         markChunkUnsaved();

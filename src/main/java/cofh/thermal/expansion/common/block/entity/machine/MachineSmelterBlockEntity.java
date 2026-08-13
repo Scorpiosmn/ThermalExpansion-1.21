@@ -89,9 +89,7 @@ public class MachineSmelterBlockEntity extends MachineBlockEntity {
         int decrement = itemInputCounts.size() > 3 ? itemInputCounts.get(3) : 0;
         if (decrement > 0) {
             if (catalystSlot.getItemStack().isDamageableItem()) {
-                if (catalystSlot.getItemStack().hurt(decrement, MathHelper.RANDOM, null)) {
-                    catalystSlot.modify(-1);
-                }
+                catalystSlot.getItemStack().hurtAndBreak(decrement, (net.minecraft.server.level.ServerLevel) level, null, item -> { });
             } else {
                 catalystSlot.modify(-decrement);
             }

@@ -189,7 +189,7 @@ public class TExpJeiPlugin implements IModPlugin {
     @Override
     public ResourceLocation getPluginUid() {
 
-        return new ResourceLocation(ID_THERMAL, "expansion");
+        return ResourceLocation.fromNamespaceAndPath(ID_THERMAL, "expansion");
     }
 
     // region HELPERS

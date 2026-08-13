@@ -13,7 +13,7 @@ import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 public class DynamoMagmaticScreen extends DynamoScreen<DynamoMagmaticMenu> {
 
     public static final String TEX_PATH = ID_THERMAL + ":textures/gui/container/fluid_dynamo.png";
-    public static final ResourceLocation TEXTURE = new ResourceLocation(TEX_PATH);
+    public static final ResourceLocation TEXTURE = ResourceLocation.parse(TEX_PATH);
 
     public DynamoMagmaticScreen(DynamoMagmaticMenu container, Inventory inv, Component titleIn) {
 

@@ -65,7 +65,7 @@ public class MachinePyrolyzerBlockEntity extends MachineBlockEntity {
         }
         FluidStack prevFluid = renderFluid;
         List<FluidStack> recipeOutputFluids = curRecipe.getOutputFluids(this);
-        renderFluid = recipeOutputFluids.isEmpty() ? FluidStack.EMPTY : new FluidStack(recipeOutputFluids.get(0), BUCKET_VOLUME);
+        renderFluid = recipeOutputFluids.isEmpty() ? FluidStack.EMPTY : recipeOutputFluids.get(0).copyWithAmount(BUCKET_VOLUME);
         return !FluidHelper.fluidsEqual(renderFluid, prevFluid);
     }
 

@@ -67,7 +67,7 @@ public class MachineChillerBlockEntity extends MachineBlockEntity {
             return false;
         }
         FluidStack prevFluid = renderFluid;
-        renderFluid = new FluidStack(inputTank.getFluidStack(), BUCKET_VOLUME);
+        renderFluid = inputTank.getFluidStack().copyWithAmount(BUCKET_VOLUME);
         return !FluidHelper.fluidsEqual(renderFluid, prevFluid);
     }
 

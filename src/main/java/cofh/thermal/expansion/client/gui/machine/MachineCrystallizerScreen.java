@@ -13,7 +13,7 @@ import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 public class MachineCrystallizerScreen extends MachineScreen<MachineCrystallizerMenu> {
 
     public static final String TEX_PATH = ID_THERMAL + ":textures/gui/container/crystallizer.png";
-    public static final ResourceLocation TEXTURE = new ResourceLocation(TEX_PATH);
+    public static final ResourceLocation TEXTURE = ResourceLocation.parse(TEX_PATH);
 
     public MachineCrystallizerScreen(MachineCrystallizerMenu container, Inventory inv, Component titleIn) {
 
