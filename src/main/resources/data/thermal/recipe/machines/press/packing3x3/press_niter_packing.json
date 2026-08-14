@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:gems/niter",
+      "tag": "c:gems/niter",
       "count": 9
     },
     {

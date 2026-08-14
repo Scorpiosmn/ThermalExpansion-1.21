@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:plates/netherite"
+    "tag": "c:plates/netherite"
   },
   "result": [
     {

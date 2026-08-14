@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter_recycle",
   "ingredient": {
-    "tag": "forge:tools/iron"
+    "tag": "c:tools/iron"
   },
   "result": [
     {
@@ -10,9 +10,9 @@
     }
   ],
   "experience": 0.3,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "tag": "forge:tools/iron",
+      "tag": "c:tools/iron",
       "type": "cofh_core:tag_exists"
     }
   ]

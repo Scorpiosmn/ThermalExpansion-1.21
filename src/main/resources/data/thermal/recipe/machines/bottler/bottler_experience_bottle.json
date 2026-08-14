@@ -5,7 +5,7 @@
       "item": "minecraft:glass_bottle"
     },
     {
-      "fluid_tag": "forge:experience",
+      "fluid_tag": "c:experience",
       "amount": 250
     }
   ],

@@ -4,25 +4,25 @@
     {
       "value": [
         {
-          "tag": "forge:ingots/lead"
+          "tag": "c:ingots/lead"
         },
         {
-          "tag": "forge:dusts/lead"
+          "tag": "c:dusts/lead"
         }
       ],
       "count": 3
     },
     {
-      "tag": "forge:dusts/diamond",
+      "tag": "c:dusts/diamond",
       "count": 1
     },
     {
       "value": [
         {
-          "tag": "forge:ender_pearls"
+          "tag": "c:ender_pearls"
         },
         {
-          "tag": "forge:dusts/ender_pearl"
+          "tag": "c:dusts/ender_pearl"
         }
       ],
       "count": 2

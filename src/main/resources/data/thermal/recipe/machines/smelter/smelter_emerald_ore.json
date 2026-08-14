@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:ores/emerald"
+    "tag": "c:ores/emerald"
   },
   "result": [
     {

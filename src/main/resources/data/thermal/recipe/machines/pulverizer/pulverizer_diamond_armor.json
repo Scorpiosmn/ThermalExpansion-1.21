@@ -1,7 +1,7 @@
 {
   "type": "thermal:pulverizer_recycle",
   "ingredient": {
-    "tag": "forge:armor/diamond"
+    "tag": "c:armor/diamond"
   },
   "result": [
     {
@@ -10,9 +10,9 @@
     }
   ],
   "experience": 1.5,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "tag": "forge:armor/diamond",
+      "tag": "c:armor/diamond",
       "type": "cofh_core:tag_exists"
     }
   ]

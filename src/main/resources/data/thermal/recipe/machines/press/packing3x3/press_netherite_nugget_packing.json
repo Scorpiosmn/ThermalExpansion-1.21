@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:nuggets/netherite",
+      "tag": "c:nuggets/netherite",
       "count": 9
     },
     {

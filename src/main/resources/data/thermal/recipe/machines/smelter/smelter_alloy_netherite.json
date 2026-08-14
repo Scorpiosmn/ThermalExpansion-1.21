@@ -4,10 +4,10 @@
     {
       "value": [
         {
-          "tag": "forge:ingots/gold"
+          "tag": "c:ingots/gold"
         },
         {
-          "tag": "forge:dusts/gold"
+          "tag": "c:dusts/gold"
         }
       ],
       "count": 4

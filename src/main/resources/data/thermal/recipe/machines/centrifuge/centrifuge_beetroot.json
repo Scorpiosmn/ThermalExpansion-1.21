@@ -1,7 +1,7 @@
 {
   "type": "thermal:centrifuge",
   "ingredient": {
-    "tag": "forge:crops/beetroot"
+    "tag": "c:crops/beetroot"
   },
   "result": [
     {

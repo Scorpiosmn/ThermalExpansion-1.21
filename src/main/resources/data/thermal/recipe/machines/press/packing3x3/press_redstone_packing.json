@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:dusts/redstone",
+      "tag": "c:dusts/redstone",
       "count": 9
     },
     {

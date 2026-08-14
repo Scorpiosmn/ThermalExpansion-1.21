@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:raw_materials/iron",
+      "tag": "c:raw_materials/iron",
       "count": 9
     },
     {

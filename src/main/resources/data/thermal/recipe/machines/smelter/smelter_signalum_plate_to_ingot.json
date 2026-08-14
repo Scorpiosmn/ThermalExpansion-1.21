@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:plates/signalum"
+    "tag": "c:plates/signalum"
   },
   "result": [
     {

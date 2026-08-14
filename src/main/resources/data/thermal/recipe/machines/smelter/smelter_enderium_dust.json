@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:dusts/enderium"
+    "tag": "c:dusts/enderium"
   },
   "result": [
     {

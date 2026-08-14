@@ -8,10 +8,10 @@
     {
       "value": [
         {
-          "tag": "forge:ingots/signalum"
+          "tag": "c:ingots/signalum"
         },
         {
-          "tag": "forge:dusts/signalum"
+          "tag": "c:dusts/signalum"
         }
       ],
       "count": 1

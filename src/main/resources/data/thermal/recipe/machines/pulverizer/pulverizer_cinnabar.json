@@ -1,7 +1,7 @@
 {
   "type": "thermal:pulverizer",
   "ingredient": {
-    "tag": "forge:gems/cinnabar"
+    "tag": "c:gems/cinnabar"
   },
   "result": [
     {

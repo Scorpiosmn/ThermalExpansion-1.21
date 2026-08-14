@@ -2,7 +2,7 @@
   "type": "thermal:bottler",
   "ingredients": [
     {
-      "tag": "forge:cobblestone"
+      "tag": "c:cobblestone"
     },
     {
       "fluid": "minecraft:water",

@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:ores/lapis"
+    "tag": "c:ores/lapis"
   },
   "result": [
     {

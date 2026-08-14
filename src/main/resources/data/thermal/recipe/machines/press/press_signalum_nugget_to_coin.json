@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:nuggets/signalum",
+      "tag": "c:nuggets/signalum",
       "count": 3
     },
     {

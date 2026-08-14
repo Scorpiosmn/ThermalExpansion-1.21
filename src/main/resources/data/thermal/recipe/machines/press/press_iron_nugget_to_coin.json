@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:nuggets/iron",
+      "tag": "c:nuggets/iron",
       "count": 3
     },
     {

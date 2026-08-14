@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:ingots/copper",
+      "tag": "c:ingots/copper",
       "count": 9
     },
     {

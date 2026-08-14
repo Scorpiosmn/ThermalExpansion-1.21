@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:ingots/enderium",
+      "tag": "c:ingots/enderium",
       "count": 4
     },
     {

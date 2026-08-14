@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:plates/lumium"
+    "tag": "c:plates/lumium"
   },
   "result": [
     {

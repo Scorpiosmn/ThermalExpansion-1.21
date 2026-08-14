@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:ores/sapphire"
+    "tag": "c:ores/sapphire"
   },
   "result": [
     {

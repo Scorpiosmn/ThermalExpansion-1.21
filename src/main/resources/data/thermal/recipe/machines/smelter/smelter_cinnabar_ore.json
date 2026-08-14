@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:ores/cinnabar"
+    "tag": "c:ores/cinnabar"
   },
   "result": [
     {

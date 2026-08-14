@@ -1,7 +1,7 @@
 {
   "type": "thermal:press",
   "ingredient": {
-    "tag": "forge:ingots/netherite"
+    "tag": "c:ingots/netherite"
   },
   "result": [
     {

@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:gems/emerald",
+      "tag": "c:gems/emerald",
       "count": 9
     },
     {

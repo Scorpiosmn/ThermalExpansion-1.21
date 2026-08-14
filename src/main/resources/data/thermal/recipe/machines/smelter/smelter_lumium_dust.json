@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:dusts/lumium"
+    "tag": "c:dusts/lumium"
   },
   "result": [
     {

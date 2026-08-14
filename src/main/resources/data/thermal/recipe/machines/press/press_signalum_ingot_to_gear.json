@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:ingots/signalum",
+      "tag": "c:ingots/signalum",
       "count": 4
     },
     {

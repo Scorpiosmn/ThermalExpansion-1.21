@@ -8,10 +8,10 @@
     {
       "value": [
         {
-          "tag": "forge:ingots/enderium"
+          "tag": "c:ingots/enderium"
         },
         {
-          "tag": "forge:dusts/enderium"
+          "tag": "c:dusts/enderium"
         }
       ],
       "count": 1

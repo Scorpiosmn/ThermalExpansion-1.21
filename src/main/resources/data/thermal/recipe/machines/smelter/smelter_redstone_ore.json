@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:ores/redstone"
+    "tag": "c:ores/redstone"
   },
   "result": [
     {

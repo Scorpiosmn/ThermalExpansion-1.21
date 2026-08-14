@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:raw_materials/gold",
+      "tag": "c:raw_materials/gold",
       "count": 9
     },
     {

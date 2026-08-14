@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:gems/cinnabar",
+      "tag": "c:gems/cinnabar",
       "count": 9
     },
     {

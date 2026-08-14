@@ -19,9 +19,9 @@
   ],
   "energy_mod": 3.25,
   "water_mod": 3.0,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "forge:not",
+      "type": "neoforge:not",
       "value": {
         "type": "cofh_core:flag_set",
         "flag": "thermal:mod_quark"

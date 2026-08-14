@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:dusts/signalum"
+    "tag": "c:dusts/signalum"
   },
   "result": [
     {

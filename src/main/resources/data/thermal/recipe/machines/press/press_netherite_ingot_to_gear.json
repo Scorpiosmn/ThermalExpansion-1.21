@@ -2,7 +2,7 @@
   "type": "thermal:press",
   "ingredients": [
     {
-      "tag": "forge:ingots/netherite",
+      "tag": "c:ingots/netherite",
       "count": 4
     },
     {

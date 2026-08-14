@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:ores/quartz"
+    "tag": "c:ores/quartz"
   },
   "result": [
     {

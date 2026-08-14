@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter_recycle",
   "ingredient": {
-    "tag": "forge:armor/copper"
+    "tag": "c:armor/copper"
   },
   "result": [
     {
@@ -10,9 +10,9 @@
     }
   ],
   "experience": 0.6,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "tag": "forge:armor/copper",
+      "tag": "c:armor/copper",
       "type": "cofh_core:tag_exists"
     }
   ]

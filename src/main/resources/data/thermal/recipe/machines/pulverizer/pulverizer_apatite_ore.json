@@ -1,7 +1,7 @@
 {
   "type": "thermal:pulverizer",
   "ingredient": {
-    "tag": "forge:ores/apatite"
+    "tag": "c:ores/apatite"
   },
   "result": [
     {

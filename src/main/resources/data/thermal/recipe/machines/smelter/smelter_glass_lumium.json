@@ -8,10 +8,10 @@
     {
       "value": [
         {
-          "tag": "forge:ingots/lumium"
+          "tag": "c:ingots/lumium"
         },
         {
-          "tag": "forge:dusts/lumium"
+          "tag": "c:dusts/lumium"
         }
       ],
       "count": 1

@@ -2,22 +2,22 @@
   "type": "thermal:smelter",
   "ingredients": [
     {
-      "tag": "forge:obsidian",
+      "tag": "c:obsidian",
       "count": 1
     },
     {
       "value": [
         {
-          "tag": "forge:gems/quartz"
+          "tag": "c:gems/quartz"
         },
         {
-          "tag": "forge:dusts/quartz"
+          "tag": "c:dusts/quartz"
         }
       ],
       "count": 1
     },
     {
-      "tag": "forge:sand",
+      "tag": "c:sand",
       "count": 1
     }
   ],

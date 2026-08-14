@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter_recycle",
   "ingredient": {
-    "tag": "forge:tools/gold"
+    "tag": "c:tools/gold"
   },
   "result": [
     {
@@ -10,9 +10,9 @@
     }
   ],
   "experience": 0.4,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "tag": "forge:tools/gold",
+      "tag": "c:tools/gold",
       "type": "cofh_core:tag_exists"
     }
   ]

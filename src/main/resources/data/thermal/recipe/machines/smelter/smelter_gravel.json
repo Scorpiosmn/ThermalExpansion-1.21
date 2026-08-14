@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter",
   "ingredient": {
-    "tag": "forge:gravel"
+    "tag": "c:gravel"
   },
   "result": [
     {

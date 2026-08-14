@@ -8,10 +8,10 @@
     {
       "value": [
         {
-          "tag": "forge:gems/sulfur"
+          "tag": "c:gems/sulfur"
         },
         {
-          "tag": "forge:dusts/sulfur"
+          "tag": "c:dusts/sulfur"
         }
       ],
       "count": 1
