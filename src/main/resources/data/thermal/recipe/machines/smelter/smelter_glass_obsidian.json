@@ -2,7 +2,7 @@
   "type": "thermal:smelter",
   "ingredients": [
     {
-      "tag": "c:obsidian",
+      "tag": "c:obsidians",
       "count": 1
     },
     {
@@ -17,7 +17,7 @@
       "count": 1
     },
     {
-      "tag": "c:sand",
+      "tag": "c:sands",
       "count": 1
     }
   ],

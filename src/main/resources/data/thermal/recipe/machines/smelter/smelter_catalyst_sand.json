@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter_catalyst",
   "ingredient": {
-    "tag": "c:sand"
+    "tag": "c:sands"
   },
   "primary_mod": 1.75,
   "secondary_mod": 1.75,
