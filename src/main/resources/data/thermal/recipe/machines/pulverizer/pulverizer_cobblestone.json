@@ -1,7 +1,7 @@
 {
   "type": "thermal:pulverizer",
   "ingredient": {
-    "tag": "c:cobblestone"
+    "tag": "c:cobblestones"
   },
   "result": [
     {
