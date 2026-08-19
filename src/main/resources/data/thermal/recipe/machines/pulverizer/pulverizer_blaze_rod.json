@@ -6,7 +6,7 @@
   "result": [
     {
       "item": "minecraft:blaze_powder",
-      "chance": 3.0
+      "chance": 5.0
     },
     {
       "item": "thermal:sulfur",
