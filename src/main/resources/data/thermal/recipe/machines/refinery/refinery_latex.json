@@ -1,0 +1,14 @@
+{
+  "type": "thermal:refinery",
+  "ingredient": {
+    "fluid": "thermal:latex",
+    "amount": 300
+  },
+  "result": [
+    {
+      "item": "thermal:rubber"
+    }
+  ],
+  "energy": 4000,
+  "experience": 0.2
+}

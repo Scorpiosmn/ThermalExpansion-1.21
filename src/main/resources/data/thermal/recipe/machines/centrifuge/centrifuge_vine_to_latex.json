@@ -1,0 +1,12 @@
+{
+  "type": "thermal:centrifuge",
+  "ingredient": {
+    "item": "minecraft:vine"
+  },
+  "result": [
+    {
+      "fluid": "thermal:latex",
+      "amount": 50
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "thermal:centrifuge",
+  "ingredient": {
+    "item": "minecraft:kelp"
+  },
+  "result": [
+    {
+      "fluid": "thermal:latex",
+      "amount": 50
+    }
+  ]
+}
